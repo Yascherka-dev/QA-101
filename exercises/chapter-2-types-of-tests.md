@@ -1,4 +1,7 @@
 # Chapter 2 Exercises: Types of Tests
+## ISTQB Foundation Level Practice
+
+**ISTQB Alignment:** These exercises align with ISTQB Test Levels and Test Types.
 
 ## Exercise 1: Test Type Identification
 
@@ -6,13 +9,13 @@
 
 You're testing a login function that validates email format. You write a test that checks if `validateEmail("test@example.com")` returns `true`.
 
-**What type of test is this?**
+**What type of test is this? (ISTQB Test Level)**
 - [ ] Integration Test
-- [ ] Unit Test
+- [ ] Unit Test (Component Test)
 - [ ] E2E Test
 - [ ] System Test
 
-**Answer:** Unit Test - Testing a single function in isolation
+**Answer:** Unit Test (Component Test) - ISTQB Test Level: Testing a single function in isolation
 
 ---
 

@@ -1,4 +1,7 @@
 # Chapter 3 Exercises: Designing Tests
+## ISTQB Foundation Level Practice
+
+**ISTQB Alignment:** These exercises align with ISTQB Test Design Techniques.
 
 ## Exercise 1: Writing Test Cases
 
@@ -124,11 +127,13 @@ Feature: Add Product to Cart
 
 ---
 
-## Exercise 4: Equivalence Partitioning
+## Exercise 4: Equivalence Partitioning (ISTQB Technique)
 
 ### Scenario
 
 Age validation: Users must be 18-65 years old to register.
+
+**ISTQB Technique:** Equivalence Partitioning groups inputs that should behave the same way.
 
 ### Task
 
@@ -159,11 +164,13 @@ Identify equivalence partitions:
 
 ---
 
-## Exercise 5: Boundary Value Analysis
+## Exercise 5: Boundary Value Analysis (ISTQB Technique)
 
 ### Scenario
 
 Password must be 8-20 characters long.
+
+**ISTQB Technique:** Boundary Value Analysis tests values at boundaries where defects often occur.
 
 ### Task
 
@@ -193,7 +200,7 @@ Identify boundary values to test:
 
 ---
 
-## Exercise 6: Decision Table
+## Exercise 6: Decision Table (ISTQB Technique)
 
 ### Scenario
 
@@ -201,6 +208,8 @@ Login system with:
 - Email valid/invalid
 - Password valid/invalid
 - Remember Me checked/unchecked
+
+**ISTQB Technique:** Decision Table Testing tests all combinations of conditions.
 
 ### Task
 

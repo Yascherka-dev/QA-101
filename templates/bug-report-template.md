@@ -1,4 +1,7 @@
 # Bug Report Template
+## ISTQB Compliant
+
+**ISTQB Standard:** This template follows ISTQB Foundation Level standards for defect reporting.
 
 ## Basic Information
 
@@ -205,9 +208,13 @@ Response: {"error":"Invalid credentials"}
 
 ---
 
-## Severity and Priority Guidelines
+## Severity and Priority Guidelines (ISTQB Standard)
 
-### Severity Levels
+**ISTQB Distinction:**
+- **Severity:** Impact of the defect on the system/functionality
+- **Priority:** Urgency to fix the defect
+
+### Severity Levels (ISTQB)
 
 **Critical:**
 - System crash or data loss

@@ -91,9 +91,10 @@ Sprint Planning → Development → Testing (parallel) → Review → Retrospect
 - Ask clarifying questions
 
 **During Sprint:**
-- Test features as they're developed (shift-left testing)
+- Test features as soon as they're ready (don't wait until sprint end)
 - Daily standups: report blockers, test progress
-- Continuous testing, not just at the end
+- Continuous testing throughout the sprint
+- **Note:** Shift-left testing refers to developers writing unit tests early. For QA, we test early in the sprint when features are ready.
 
 **Sprint Review:**
 - Demo tested features
@@ -106,6 +107,52 @@ Sprint Planning → Development → Testing (parallel) → Review → Retrospect
 - Share quality metrics
 
 **Key Principle:** Test early, test often. Don't wait until the end of the sprint.
+
+### 1.6 Fundamental Testing Principles (ISTQB)
+
+**ISTQB defines 7 fundamental principles of testing:**
+
+1. **Testing shows presence of defects**
+   - Testing can show that defects exist, but cannot prove that defects don't exist
+   - **Example:** Even if 1000 tests pass, there might still be bugs we haven't tested
+
+2. **Exhaustive testing is impossible**
+   - Testing everything (all combinations) is not feasible
+   - **Solution:** Use test design techniques (equivalence partitioning, boundary values)
+   - **Example:** Testing a login with all possible email/password combinations is impossible
+
+3. **Early testing**
+   - Start testing as early as possible in the SDLC
+   - **Benefit:** Find defects early when they're cheaper to fix
+   - **For Developers:** Shift-left testing = writing unit tests during development
+   - **For QA:** Test features as soon as they're ready in the sprint, don't wait until the end
+
+4. **Defect clustering**
+   - A small number of modules usually contain most defects
+   - **Implication:** Focus testing on critical/high-risk areas
+   - **Example:** Authentication module might have more bugs than a simple "About" page
+
+5. **Pesticide paradox**
+   - Repeating the same tests finds fewer and fewer bugs
+   - **Solution:** Regularly review and update tests, use exploratory testing
+   - **Example:** Running the same 10 test cases every sprint becomes less effective
+
+6. **Testing is context dependent**
+   - Testing approaches differ based on context
+   - **Example:** Web app testing differs from mobile app testing
+   - **Your context:** Angular web app + REST API requires different approach than embedded systems
+
+7. **Absence-of-errors fallacy**
+   - Finding no defects doesn't mean the software is useful
+   - **Key:** Software must meet user needs, not just be bug-free
+   - **Example:** A bug-free app that doesn't solve user problems is still a failure
+   - **Solution:** UAT validates business value, not just absence of bugs
+
+**Why These Principles Matter:**
+- Guide your testing strategy
+- Help explain testing decisions to stakeholders
+- Foundation for ISTQB certification
+- Prevent common testing mistakes
 
 ---
 
@@ -663,7 +710,7 @@ test('login flow', async ({ page }) => {
 
 ### 7.1 Test Pyramid
 
-**Concept:** More unit tests, fewer E2E tests
+**Concept (ISTQB/Agile):** More unit tests, fewer E2E tests
 
 ```
         /\
@@ -680,6 +727,11 @@ test('login flow', async ({ page }) => {
 - Integration tests: Moderate speed, moderate cost
 - E2E tests: Slow, expensive, fewer
 
+**ISTQB Alignment:**
+- Aligns with ISTQB principle of "Exhaustive testing is impossible"
+- Focuses testing effort where it's most effective
+- Recommended approach in ISTQB Agile Tester extension
+
 ### 7.2 Test Strategy for a Sprint
 
 **Week 1 (Planning + Early Development):**
@@ -689,7 +741,7 @@ test('login flow', async ({ page }) => {
 - Clarify requirements
 
 **Week 2 (Development + Testing):**
-- Test features as developed (shift-left)
+- Test features as soon as they're ready (don't wait until sprint end)
 - Execute test cases
 - Exploratory testing
 - Report bugs early
@@ -715,11 +767,19 @@ test('login flow', async ({ page }) => {
 - Test execution rate: Tests run vs planned
 - Bug fix rate: Time to fix bugs
 
+**ISTQB Standard Metrics:**
+- **Test Coverage:** % of requirements/test cases covered
+- **Defect Density:** Number of defects per size unit (feature, module, etc.)
+- **Defect Detection Percentage (DDP):** (Defects found in testing / Total defects) × 100
+- **Test Effectiveness:** Ability of tests to find defects
+- **Defect Removal Efficiency:** Defects removed before release / Total defects
+
 **Use Metrics To:**
 - Identify problem areas
 - Improve processes
 - Communicate status
 - Make data-driven decisions
+- Measure testing effectiveness (ISTQB standard)
 
 ### 7.4 Continuous Improvement
 

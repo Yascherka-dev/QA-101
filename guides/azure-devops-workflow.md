@@ -287,7 +287,7 @@ New → Assigned → Active → Resolved → Closed
 ### 7.2 Test Execution
 
 ✅ **DO:**
-- Execute tests as features are developed (shift-left)
+- Execute tests as soon as features are ready (test early, don't wait until sprint end)
 - Attach screenshots for failures
 - Add detailed comments
 - Update test status regularly

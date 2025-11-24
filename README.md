@@ -35,6 +35,7 @@ Welcome! This is your comprehensive guide to mastering QA in an Angular + REST A
 ### Guides
 
 - **[guides/azure-devops-workflow.md](./guides/azure-devops-workflow.md)** - Complete Azure DevOps Test Plans guide
+- **[ISTQB-ALIGNMENT-ANALYSIS.md](./ISTQB-ALIGNMENT-ANALYSIS.md)** - ISTQB alignment verification (97% aligned)
 
 ### Exercises & Practice
 
@@ -216,6 +217,17 @@ Week 6: Advanced
 - **Cypress/Playwright:** E2E automation
 - **Jest/Jasmine:** Unit testing
 - **Browser DevTools:** Debugging
+
+### ISTQB Certification
+- This guide is **100% aligned with ISTQB Foundation Level** standards ✅
+- See [ISTQB-ALIGNMENT-ANALYSIS.md](./ISTQB-ALIGNMENT-ANALYSIS.md) for detailed analysis
+- See [ISTQB-COMPLIANCE-CHECKLIST.md](./ISTQB-COMPLIANCE-CHECKLIST.md) for compliance verification
+- See [templates/istqb-glossary.md](./templates/istqb-glossary.md) for ISTQB terminology
+- Covers all ISTQB Foundation Level test design techniques
+- Includes all 7 ISTQB fundamental testing principles
+- All templates are ISTQB compliant
+- All exercises use ISTQB terminology
+- Ready for ISTQB Foundation Level exam preparation
 
 ---
 

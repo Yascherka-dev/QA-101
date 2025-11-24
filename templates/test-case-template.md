@@ -1,4 +1,7 @@
 # Test Case Template
+## ISTQB Compliant
+
+**ISTQB Standard:** This template follows ISTQB Foundation Level standards for test case documentation.
 
 ## Basic Information
 
@@ -13,8 +16,8 @@
 ## Test Details
 
 **Priority:** [High / Medium / Low]  
-**Test Type:** [Functional / Integration / E2E / Regression / Smoke]  
-**Test Level:** [Unit / Integration / System / Acceptance]  
+**Test Type:** [Functional / Non-Functional / Regression / Smoke]  
+**Test Level (ISTQB):** [Component/Unit / Integration / System / Acceptance]  
 **Estimated Time:** [e.g., 5 minutes]
 
 ## Preconditions

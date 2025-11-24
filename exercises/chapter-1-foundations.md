@@ -1,4 +1,7 @@
 # Chapter 1 Exercises: QA Foundations
+## ISTQB Foundation Level Practice
+
+**ISTQB Alignment:** These exercises align with ISTQB Foundation Level concepts.
 
 ## Exercise 1: Understanding QA Role
 
@@ -16,17 +19,24 @@
    - [ ] Only during the testing phase
    - [ ] Only when bugs are found
 
-3. **What is "shift-left testing"?**
+3. **What is "shift-left testing"? (ISTQB Principle: Early Testing)**
    - [ ] Testing only on the left side of the screen
-   - [ ] Testing early in the development process
+   - [ ] Developers writing unit tests early in development
    - [ ] Testing only left-aligned elements
    - [ ] A type of automation tool
+
+4. **According to ISTQB, which principle states that exhaustive testing is impossible?**
+   - [ ] Testing shows presence of defects
+   - [ ] Exhaustive testing is impossible
+   - [ ] Early testing
+   - [ ] Defect clustering
 
 ### Answers
 
 1. **B** - QA is process-oriented (preventing defects), Testing is activity-oriented (finding defects)
-2. **B** - QA should be involved throughout the entire SDLC, from planning to deployment
-3. **B** - Shift-left testing means testing early in the development process, not waiting until the end
+2. **B** - QA should be involved throughout the entire SDLC, from planning to deployment (ISTQB: Early Testing principle)
+3. **B** - Shift-left testing refers to developers writing unit tests early in development. For QA, we test features as soon as they're ready in the sprint (ISTQB: Early Testing principle)
+4. **B** - "Exhaustive testing is impossible" is an ISTQB fundamental principle
 
 ---
 
@@ -65,7 +75,7 @@ You're in a 2-week sprint. Here's the timeline:
 ### Answers
 
 1. **B** - Start writing test cases during sprint planning (Day 1-2) when you review user stories
-2. **B** - Test features as soon as they're ready (shift-left), not wait for a "testing phase"
+2. **B** - Test features as soon as they're ready, not wait for a "testing phase"
 3. **B** - Report your testing progress, blockers, and any issues you've found
 
 ---
@@ -154,7 +164,7 @@ For each topic, rate yourself 1-5 (1 = Need to learn, 5 = Fully understand):
 - [ ] QA responsibilities: _____
 - [ ] SDLC and where QA fits: _____
 - [ ] QA in Scrum/Agile: _____
-- [ ] Shift-left testing concept: _____
+- [ ] Early testing concept (testing when features are ready): _____
 
 ### Next Steps Based on Score
 
@@ -210,7 +220,7 @@ Create a checklist of QA activities for a typical sprint. Use this template:
 Before moving to "Types of Tests," make sure you:
 - [ ] Understand what QA is
 - [ ] Know QA's role in Scrum
-- [ ] Understand shift-left testing
+- [ ] Understand early testing (testing when features are ready, not waiting)
 - [ ] Can explain QA vs Testing
 
 **If yes, proceed to Chapter 2!**  

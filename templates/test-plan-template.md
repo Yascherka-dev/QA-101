@@ -1,4 +1,7 @@
 # Test Plan Template
+## ISTQB Compliant
+
+**ISTQB Standard:** This template follows ISTQB Foundation Level standards for test planning documentation (IEEE 829 standard alignment).
 
 ## Document Information
 
@@ -79,23 +82,29 @@ This test plan outlines the testing strategy for User Management features in Spr
 
 ## 5. Test Approach
 
-### 5.1 Test Levels
+### 5.1 Test Levels (ISTQB Standard)
 
-**Unit Testing:**
+**ISTQB defines 4 test levels:**
+
+**1. Component/Unit Testing (ISTQB):**
 - Performed by developers
 - Coverage: > 80% code coverage
+- Tests individual components in isolation
 
-**Integration Testing:**
+**2. Integration Testing (ISTQB):**
 - API endpoints tested with Postman
 - Frontend-backend integration verified
+- Tests interaction between components
 
-**System Testing:**
+**3. System Testing (ISTQB):**
 - End-to-end user workflows
 - Cross-browser testing (Chrome, Firefox, Edge)
+- Tests complete integrated system
 
-**Acceptance Testing:**
+**4. Acceptance Testing (ISTQB):**
 - UAT with product owner
 - Business validation
+- Tests that system meets business needs
 
 ### 5.2 Test Types
 
@@ -179,33 +188,51 @@ This test plan outlines the testing strategy for User Management features in Spr
 - [ ] Test Summary Report
 - [ ] Automation Scripts (if applicable)
 
-## 13. Defect Management
+## 13. Defect Management (ISTQB Standard)
 
-**Severity Levels:**
-- Critical: System crash, data loss
-- High: Major feature broken
-- Medium: Feature partially broken
-- Low: Cosmetic, minor issue
+**ISTQB Defect Classification:**
 
-**Priority Levels:**
-- P1: Fix immediately
-- P2: Fix in current sprint
-- P3: Fix in next sprint
-- P4: Fix when time permits
+**Severity Levels (Impact on System):**
+- **Critical:** System crash, data loss, security breach
+- **High:** Major feature broken, workaround exists
+- **Medium:** Feature partially broken, minor impact
+- **Low:** Cosmetic, minor inconvenience
 
-**Defect Lifecycle:**
+**Priority Levels (Urgency to Fix):**
+- **P1 (Critical):** Fix immediately (same day)
+- **P2 (High):** Fix in current sprint
+- **P3 (Medium):** Fix in next sprint
+- **P4 (Low):** Fix when time permits
+
+**ISTQB Defect Lifecycle:**
 New → Assigned → In Progress → Fixed → Verified → Closed
 
-## 14. Test Metrics
+**Note:** Severity = Impact, Priority = Urgency (ISTQB distinction)
 
-**Metrics to Track:**
+## 14. Test Metrics (ISTQB Standard)
+
+**ISTQB Standard Metrics:**
+
+**Test Execution Metrics:**
 - Total test cases: [Number]
 - Test cases executed: [Number]
 - Test cases passed: [Number]
 - Test cases failed: [Number]
-- Bugs found: [Number]
-- Bugs fixed: [Number]
-- Test coverage: [Percentage]
+- Test cases blocked: [Number]
+- Test execution rate: [%]
+
+**Defect Metrics (ISTQB):**
+- Total defects found: [Number]
+- Defects fixed: [Number]
+- Defects verified: [Number]
+- Defect density: [Defects per feature/module]
+- Defect detection percentage (DDP): [%]
+- Defect removal efficiency: [%]
+
+**Coverage Metrics:**
+- Test coverage: [Percentage of requirements covered]
+- Code coverage: [Percentage] (for unit tests)
+- Requirement coverage: [Percentage]
 
 ## 15. Approvals
 
